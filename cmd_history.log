@@ -1,0 +1,311 @@
+    4  sudo systemctl start docker
+    5  sudo systemctl enable  docker
+    7  mkdir node
+    9  vim docker-compose.yml
+   14  mkdir test
+   15  cd test
+   16  touch docker-compose.yml
+   17  vim docker-compose.yml
+   18  mkdir node
+   19  cd node
+   20  vim Dockerfile
+   21  vim ../docker-compose.yml
+   23  mkdir db
+   24  vim db/Dockerfile
+   33  git clone https://github.com/yaitalla/matcha.git app
+   37  vim Dockerfile
+   40  docker-compose up -d
+   41  vim docker-compose.yml
+   43  sudo docker-compose up -d
+   44  sudo usermod -aG docker $USER
+   45  docker-compose up -d
+   46  sudo docker-compose up -d
+   47  docker network create web
+   48  exit
+   49  cd test
+   52  docker-compose up -d
+   53  docker network create web
+   54  docker-compose up -d
+   56  vim docker-compose.yml
+   57  vim node/Dockerfile
+   65  docker-compose up -d --build
+   69  vim docker-compose.yml
+   70  docker-compose up -d --build
+   84  docker-compose up -d --build
+   86  curl 127.0.0.1:8080
+   87  docker ps
+   90  docker-compose up -d --build
+   91  curl 127.0.0.1:8080
+   92  docker ps
+   94  docker system prune
+   95  docker-compose up -d --build
+   96  docker network create web
+   97  docker-compose up -d --build
+   98  docker ps
+  101  docker logs node
+  102  docker logs node -f
+  104  curl 127.0.0.1:8080
+  105  curl 127.0.0.1
+  107  docker-compose up -d 
+  108  docker ps
+  109  curl 127.0.0.1
+  110  curl 127.0.0.1:8080
+  112  docker-compose up -d 
+  114  docker-compose up -d 
+  116  docker-compose up -d 
+  117  docker logs node
+  119  docker logs node -f
+  120  curl 127.0.0.1:8080
+  121  curl 127.0.0.1:80
+  122  curl 127.0.0.1:8080/signup
+  123  curl 127.0.0.1:80/signup
+  125  docker-compose up -d 
+  126  cd node
+  127  mv app app_old
+  128  git clone https://github.com/heroku/node-js-sample.git app
+  130  docker-compose up -d  --build
+  131  vim ../docker-compose.yml
+  132  docker ps
+  133  cd ..
+  134  ls
+  135  cd mo
+  136  cd node/app
+  137  ls
+  138  vim package.json
+  139  vim index.js
+  140  curl 127.0.0.1:8080
+  141  cat * | grep port
+  142  docker logs node
+  143  docker logs node -f
+  144  vim index.js
+  145  curl 127.0.0.1:8080
+  146  curl 127.0.0.1:80
+  147  curl 127.0.0.1:8080
+  148  curl 127.0.0.1:8080/
+  149  docker inspect node | grep IP
+  150  curl 172.20.0.3:8080/
+  151  cd test
+  152  docker ps
+  153  docker-compose up -d
+  154  curl 172.20.0.3:8080/
+  155  curl 127.0.0.1:8080/
+  156  curl 172.20.0.3:8080/
+  157  vim docker-compose.yml
+  158  docker-compose up -d
+  159  curl 172.20.0.3:8080/
+  160  curl 127.0.0.1:8080/
+  161  curl 127.0.0.1:8080/ -v
+  162  docker s
+  163  docker ps
+  164  vim docker-compose.yml
+  165  docker-compose up -d
+  166  sudo ufw allow PORT
+  167  sudo firewall-cmd --zone=public --permanent --add-port=8080/tcp
+  168  iptables -I INPUT 1 -p tcp --dport 8080 -j ACCEPT
+  169  sudo apt-get install iptablesle
+  170  sudo apt-get install iptable
+  171  sudo apt-get install iptables
+  172  iptables -I INPUT 1 -p tcp --dport 8080 -j ACCEPT
+  173  sudo apt-get install iptable
+  174  sudo apt-get install iptables
+  175  iptables -I INPUT 1 -p tcp --dport 8080 -j ACCEPT
+  176  sudo iptables -I INPUT 1 -p tcp --dport 8080 -j ACCEPT
+  177  ls
+  178  cd node
+  179  rm -rf app
+  180  mv app_old app
+  181  cd ..
+  182  docker-compose up -d --build
+  183  docker logs node -f
+  184  ls
+  185  cd node
+  186  ls
+  187  cd app
+  188  ls
+  189  vim  package.json
+  190  vim index.js
+  191  vim ../../docker-compose.yml
+  192  vim index.js
+  193  vim ../../docker-compose.yml
+  194  docker-compose up -d --build
+  195  docker logs node -f
+  196  vi index.js
+  197  docker-compose up -d --build
+  198  docker logs node -f
+  199  vim ../../docker-compose.yml
+  200  docker-compose up -d 
+  201  docker logs node
+  202  vim ../../docker-compose.yml
+  203  vim ../Dockerfile
+  204  docker-compose up -d  --build
+  205  vim ../Dockerfile
+  206  vim ../../docker-compose.yml
+  207  vim ../Dockerfile
+  208  cd ..
+  209  docker-compose up -d  --build
+  210  docker logs node
+  211  docker logs node -f
+  212  vim docker-compose.yml
+  213  docker logs node -f
+  214  docker-compose up -d  --build
+  215  vim docker-compose.yml
+  216  docker-compose up -d  --build
+  217  docker logs node
+  218  vim docker-compose.yml
+  219  vim node/Dockerfile
+  220  vim docker-compose.yml
+  221  docker-compose up -d  --build
+  222  vim docker-compose.yml
+  223  vim node/Dockerfile
+  224  docker-compose up -d  --build
+  225  vim node/Dockerfile
+  226  vim docker-compose.yml
+  227  docker-compose up -d  --build
+  228  docker logs node
+  229  vim docker-compose.yml
+  230  docker-compose up -d  --build
+  231  docker logs node
+  232  ls
+  233  docker system prune
+  234  docker system prune --volumes
+  235  docker-compose up -d  --build
+  236  vim node/app/index.js
+  237  cat node/app/index.js
+  238  vim docker-compose.yml
+  239  vim node/app/index.js
+  240  vim docker-compose.yml
+  241  docker-compose up -d  --build
+  242  docker logs node
+  243  vim node/app/index.js
+  244  docker-compose up -d  --build
+  245  docker logs node
+  246  vim docker-compose.yml
+  247  docker-compose up -d  --build
+  248  docker logs node
+  249  vim docker-compose.yml
+  250  docker rm -fv db
+  251  ls
+  252  rm -rf db/data/
+  253  sudo rm -rf db/data/
+  254  docker-compose up -d  --build
+  255  vim db/my.cnf
+  256  vim docker-compose.yml
+  257  docker logs node
+  258  vim docker-compose.yml
+  259  cd db
+  260  mkdir conf
+  261  mv my.cnf conf
+  262  cd ..
+  263  vim d
+  264  vim docker-compose.yml
+  265  mv db/conf db/config
+  266  vim docker-compose.yml
+  267  docker-compose up -d  --build
+  268  docker logs node
+  269  ls
+  270  cd node_mysal
+  271  ls
+  272  cd ..
+  273  ls
+  274  cd test/
+  275  ls
+  276  cd node/app
+  277  ls
+  278  vim index.js
+  279* ls
+  280* cd ..
+  281* ls
+  282* cd node_mysal
+  283* ls
+  284* cd node
+  285* ls
+  286* cd ../..
+  287* ls
+  288* cd test
+  289* ls
+  290* cd db
+  291* ls
+  292* pwd
+  293* clear
+  294* ls
+  295* cd config
+  296* ls
+  297* cd ../data
+  298* ls
+  299* clear
+  300* ls
+  301  pwd
+  302  cd ../../..
+  303  ls
+  304  pwd
+  305  git clone https://github.com/yaitalla/Docker-config.git 
+  306  cd Docker-config
+  307* cd
+  308* ls
+  309* cd test
+  310* ls
+  311* cat docker-compose.yml
+  312* clear
+  313* ls
+  314* cp docker-compose.yml ../Docker-config
+  315* clear
+  316* ls
+  317* cd db
+  318* ls
+  319  clear
+  320  ls
+  321* clear
+  322* ls
+  323* cd ..
+  324* ls
+  325  mkdir node db
+  326  cd db
+  327  ls
+  328* cd db
+  329* ls
+  330* dc config
+  331* ls
+  332* cd config
+  333* ls
+  334* cd ..
+  335* lcear
+  336* clear
+  337* ls
+  338* cp -rf config ../../Docker-config/db
+  339* cd data
+  340* ls
+  341* cd ..
+  342* clear
+  343* ls
+  344* cd ..
+  345* ls
+  346* cd node
+  347* ls
+  348* cd app
+  349* ls
+  350* clear
+  351* ls
+  352* cd ..
+  353  ls
+  354  cd ..
+  355  ls
+  356  cd node
+  357  ls
+  358* cat Dockerfile
+  359* cp Dockerfile ../../Docker-config/node
+  360  ls
+  361  cd ..
+  362  clear
+  363  ls
+  364  pwd
+  365  git status
+  366  git add --all
+  367  git commit -m "nodejs mysql (matcha)"
+  368* git config --global user.email "yaitalla.dev@gmail.com"
+  369* git config --global user.name "yaitalla"
+  370  git commit -m "nodejs mysql (matcha)"
+  371  git push origin master
+  372* cd
+  373* clear
+  374* history
+  375  ls
